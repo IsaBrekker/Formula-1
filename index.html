@@ -71,430 +71,36 @@
         height: 100%;
         object-fit: cover;
     }
-        nav {
-            background: #d32f2f;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 10px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-    </style>
-    <script>
-        function showSection(sectionId) {
-            let sections = document.querySelectorAll('.section');
-            sections.forEach(section => section.style.display = 'none');
-            document.getElementById(sectionId).style.display = 'block';
-        }
-    </script>
-</head>
-<body>
-    <h1>Bienvenue sur la Formule 1</h1>
-   
-    <div class="intro">
-        <h2>Qu'est-ce que la Formule 1 ?</h2>
-        <p>La Formule 1 est le championnat de course automobile le plus prestigieux au monde.</p>
-        <ul>
-            <li><strong>10 écuries :</strong> Chaque équipe a 2 pilotes, soutenus par des mécaniciens, ingénieurs et stratèges.</li>
-            <li><strong>20 pilotes :</strong> Leur rôle est d’optimiser la performance de leur voiture pour obtenir les meilleurs résultats pour leur équipe.</li>
-            <li><strong>1 championnat des constructeurs :</strong> Les équipes se battent pour gagner des primes selon leur classement en fin de saison.</li>
-            <li><strong>1 championnat des pilotes :</strong> Chaque pilote représente son équipe, mais son objectif ultime est de devenir champion du monde.</li>
-        </ul>
-    </div>
-   
-    <nav>
-        <a onclick="showSection('ecuries')">Écuries</a>
-        <a onclick="showSection('pilotes')">Pilotes</a>
-        <a onclick="showSection('pneus')">Pneus</a>
-        <a onclick="showSection('sprint')">Sprint Weekend</a>
-        <a onclick="showSection('deroulement')">Déroulement des courses</a>
-        <a onclick="showSection('qualifications')">Qualifications</a>
-        <a onclick="showSection('courses')">Courses du weekend</a>
-        <a onclick="showSection('entrainement')">Entraînement libre</a>
-    </nav>
-   
-   <div class="section" id="ecuries">
-        <h2>Les Écuries</h2>
-        <div class="teams-container">
-            <div class="team-card">
-                <img src="https://www.oracle.com/oce/press/assets/CONT627DB01268AB4125A078BA8CD375ADEF/native/og-social-redbull.gif.jpg" class="team-logo" alt="Logo Red Bull">
-                <h3>Oracle Red Bull Racing</h3>
-                <div class="team-image">
-            <img src="https://www.grandepremio.com.br/wp-content/uploads/2022/03/GPF1-13.jpg" alt="Livery">
-        </div>
-                <p><strong>Team Principal :</strong> Christian Horner</p>
-        <p><strong>Directeur Technique :</strong> Pierre Waché</p>
-                <p><strong>Pilotes :</strong> Max Verstappen, Liam Lawson</p>
-        <p><strong>Pilotes de réserve :</strong> Yuki Tsunoda</p>
-        <p><strong>Voiture :</strong> PB21 - Moteur Honda RBPT</p>
-            </div>
-           
-            <div class="team-card">
-                <img src="https://logo-marque.com/wp-content/uploads/2021/10/Ferrari-Scuderia-Logo-2018.jpg" class="team-logo" alt="Logo Ferrari">
-                <h3>Scuderia Ferrari HP</h3>
-                <div class="team-image">
-            <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/t_16by9Centre/f_auto/q_auto/fom-website/2025/Ferrari/Ferrari%20SF-25%20launch%20renders/F677_still_02_v11_169" alt="Livery">
-        </div>
-                <p><strong>Team Principal :</strong> Frédéric Vasseur</p>
-        <p><strong>Directeur Technique :</strong> Loic Serra, Enrico Gualtieri</p>
-                <p><strong>Pilotes :</strong> Charles Leclerc, Lewis Hamilton</p>
-        <p><strong>Pilotes de réserve :</strong> Zhou Guanyu, Antonio Giovinazzi</p>
-        <p><strong>Voiture :</strong> SF-25 - Moteur Ferrari</p>
-            </div>
-           
-            <div class="team-card">
-                <img src="https://wallpapercave.com/wp/wp11432313.jpg" class="team-logo" alt="Logo Mercedes">
-                <h3>Mercedes-AMG Petronas</h3>
-                <div class="team-image">
-            <img src="https://s.france24.com/media/display/425e33fa-f2ca-11ef-84be-005056a90284/w:1024/p:16x9/87fc099b6c51e5866bc927f5fab5b8c16af88782.jpg" alt="Livery">
-        </div>
-                <p><strong>Team Principal :</strong> Toto Wolff</p>
-        <p><strong>Directeur Technique :</strong> James Allison</p>
-                <p><strong>Pilotes :</strong> George Russell, Kimi Antonelli</p>
-        <p><strong>Pilotes de réserve :</strong> Valtteri Bottas, Frederik Vesti</p>
-        <p><strong>Voiture :</strong> W16 - Moteur Mercedes</p>
-            </div>
-           
-            <div class="team-card">
-                <img src="https://logowik.com/content/uploads/images/mclaren-formula-1-team8249.logowik.com.webp" class="team-logo" alt="Logo McLaren">
-                <h3>McLaren</h3>
-                <div class="team-image">
-            <img src="https://cdn-6.motorsport.com/images/amp/6D1X3LK0/s6/oscar-piastri-mclaren.jpg" alt="Livery">
-        </div>
-                <p><strong>Team Principal :</strong> Andrea Stella</p>
-        <p><strong>Directeur Technique :</strong> Peter Prodromou, Neil Houldy, Mark Temple</p>
-                <p><strong>Pilotes :</strong> Lando Norris, Oscar Piastri</p>
-        <p><strong>Pilotes de réserve :</strong> Pato O'ward</p>
-        <p><strong>Voiture :</strong> MCL39 - Moteur Mercedes</p>
-            </div>
-           
-            <div class="team-card">
-                <img src="https://i.pinimg.com/originals/0f/a9/c9/0fa9c939623bcdf00b5c5d1a39f7e9d0.jpg" class="team-logo" alt="Logo Alpine">
-                <h3>BWT Alpine</h3>
-                <div class="team-image">
-            <img src="https://media.nbcbayarea.com/2025/02/250218-alpine-f1.jpg?quality=85&strip=all&fit=1360%2C765&w=1575&h=886&crop=1" alt="Livery">
-        </div>
-                <p><strong>Team Principal :</strong> Oliver Oakes</p>
-        <p><strong>Directeur Technique :</strong> David Sanchez</p>
-                <p><strong>Pilotes :</strong> Pierre Gasly, Jack Doohan</p>
-        <p><strong>Pilotes de réserve :</strong> Franco Colapinto, Paul Aron</p>
-        <p><strong>Voiture :</strong> A525 - Moteur Renault</p>
-            </div>
-           
-            <div class="team-card">
-                <img src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/williams%20blue.jpg" class="team-logo" alt="Logo Williams">
-                <h3>Williams Racing</h3>
-                <div class="team-image">
-            <img src="https://imagenes.20minutos.es/files/image_990_auto/uploads/imagenes/2025/02/24/williams-fw47.jpeg" alt="Livery">
-        </div>
-                <p><strong>Team Principal :</strong> James Vowles</p>
-        <p><strong>Directeur Technique :</strong> Pat Fry</p>
-                <p><strong>Pilotes :</strong> Carlos Sainz, Alexander Albon</p>
-        <p><strong>Pilotes de réserve :</strong> Aucun</p>
-        <p><strong>Voiture :</strong> FW47 - Moteur Mercedes</p>
-            </div>
-
-
-            <div class="team-card">
-                <img src="https://www.tasarlabana.com.tr/content/images/large/visa_cash_app_kategori_grseli65dccb07b351f.jpg" class="team-logo" alt="Logo Racing Bulls">
-                <h3>Visa Cash APP RB</h3>
-                <div class="team-image">
-            <img src="https://www.thepaddockmagazine.com/wp-content/uploads/2025/02/si202502180809-1050x788.jpg" alt="Livery">
-        </div>
-                <p><strong>Team Principal :</strong> Lauren Mekies</p>
-        <p><strong>Directeur Technique :</strong> Jody Egginton</p>
-                <p><strong>Pilotes :</strong> Yuki Tsunoda, Isack Hadjar</p>
-        <p><strong>Pilotes de réserve :</strong> Ayumu Iwasa</p>
-        <p><strong>Voiture :</strong> VCARB-02 - Moteur Honda RBPT</p>
-            </div>
-
-
-        <div class="team-card">
-                <img src="https://www.ifs.com/-/media10/project/ifs/ifs/images/logos/customer-logos/ifs_aston_martin_f1_logo_2_01_22_670x300.jpg?h=300&iar=0&w=670&hash=EE3D27BE12F12976CA70FBC45308881A" class="team-logo" alt="Logo Aston Martin">
-                <h3>Aston Martin ARAMCO</h3>
-                <div class="team-image">
-            <img src="https://e0.365dm.com/25/02/768x432/skysports-aston-martin-am-amr25_6837902.jpg?20250223171941" alt="Livery">
-        </div>
-                <p><strong>Team Principal :</strong> Andy Cowell</p>
-        <p><strong>Directeur Technique :</strong> Enrico Cardile</p>
-                <p><strong>Pilotes :</strong> Fernando Alonso, Lance Stroll</p>
-        <p><strong>Pilotes de réserve :</strong> Felipe Drugovich, Stoffel Vandoorne</p>
-        <p><strong>Voiture :</strong> AMR25 - Moteur Mercedes</p>
-            </div>
-
-
-        <div class="team-card">
-                <img src="https://th.bing.com/th/id/R.f30a7ad95a1af02df397473d7b0396dc?rik=VcpqO62XEp1bbg&pid=ImgRaw&r=0" class="team-logo" alt="Logo HAAS">
-                <h3>Moneygram HAAS</h3>
-                <div class="team-image">
-            <img src="https://www.jalopnik.com/img/gallery/every-2025-formula-1-livery-ranked/moneygram-haas-1739979332.jpg" alt="Livery">
-        </div>
-                <p><strong>Team Principal :</strong> Ayako Komatsu</p>
-        <p><strong>Directeur Technique :</strong> Andrea De Zordo</p>
-                <p><strong>Pilotes :</strong> Esteban Ocon, Ollie Bearman</p>
-        <p><strong>Pilotes de réserve :</strong> Pietro Fittipaldi</p>
-        <p><strong>Voiture :</strong> VF-25 - Moteur Ferrari</p>
-            </div>
-
-
-        <div class="team-card">
-                <img src="https://cdn-2.motorsport.com/images/amp/0L17d5W2/s1000/logo-stakef1team-rgb-pos-1.jpg" class="team-logo" alt="Logo Kick Sauber ">
-                <h3>Stake Kick Sauber</h3>
-                <div class="team-image">
-            <img src="https://www.formula1.com/trackside-images/2024/F1_75_Live___Show/2200458340.jpg" alt="Livery">
-        </div>
-                <p><strong>Team Principal :</strong> Mattia Binotto</p>
-        <p><strong>Directeur Technique :</strong> James Key</p>
-                <p><strong>Pilotes :</strong> Nico Hulkenberg, Gabriel Borleto</p>
-        <p><strong>Pilotes de réserve :</strong> Aucun</p>
-        <p><strong>Voiture :</strong> C45 - Moteur Ferrari</p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="section" id="pilotes">
-        <h2>Les Pilotes</h2>
-        <div class="pilotes-container">
-            <div class="pilote-card">
-                <h3>Max Verstappen</h3>
-                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2024Drivers/verstappen" alt="Pilotes">
-</div>
-                <p><strong>Âge :</strong> 27 ans</p>
-                <p><strong>Pays :</strong> Pays-Bas</p>
-                <p><strong>Numéro :</strong> 33 (actuellement 1)</p>
-        <p><strong>Saison :</strong> 11</p>
-        <p><strong>Ecurie :</strong> Oracle Red Bull Racing</p>
-        <p><strong>Poles :</strong> 40</p>
-        <p><strong>Podiums :</strong> 112</p>
-        <p><strong>Victoire :</strong> 63</p>
-        <p><strong>Champion du monde:</strong> 4</p>
-       
-            </div>
-        </div>
-    </div>
-
-
-    <div class="section" id="pneus">
-        <h2>Les Pneus en Formule 1</h2>
-        <h3>Performance</h3>
-        <p>Les pneus jouent un rôle essentiel en fournissant l'adhérence nécessaire pour accélérer, freiner et négocier les virages. Au fil du temps, ils se dégradent sous l'effet de la friction et de la chaleur, ce qui impacte les temps au tour. Leur gestion est donc cruciale pour maintenir de bonnes performances.</p>
-       
-        <h3>Stratégie</h3>
-        <p>Les pneus ont un impact majeur sur la stratégie de course. Le choix des composés et le moment où ils sont utilisés peuvent faire la différence entre la victoire et la défaite.</p>
-       
-        <h2>Pirelli : Le Fournisseur Officiel de Pneus F1</h2>
-        <h4>Qui est Pirelli ?</h4>
-        <p>Pirelli est un fabricant italien de pneus fondé en 1872 et l'un des leaders mondiaux du secteur. Il est spécialisé dans les pneus haute performance et de compétition, et fournit notamment la Formule 1 depuis 2011.</p>
-       
-        <h4>Son rôle en Formule 1</h4>
-        <ul>
-            <li><strong>Collaboration :</strong> Pirelli travaille avec la FIA et les équipes pour répondre aux exigences techniques.</li>
-            <li><strong>Développement :</strong> Conception et fabrication de pneus adaptés aux divers circuits et conditions.</li>
-            <li><strong>Sécurité & Durabilité :</strong> Respect des normes de sécurité et de durabilité pour supporter les forces extrêmes de la F1.</li>
-            <li><strong>Tests :</strong> Programmes de tests avec les équipes pour améliorer la technologie des pneus.</li>
-        </ul>
-       
-        <h3>Les Deux Types de Pneus en F1</h3>
-        <h4>Pneus secs (slicks)</h4>
-        <ul>
-            <li><strong>Tendres (S) :</strong> Adhérence maximale mais usure rapide.</li>
-            <li><strong>Médiums (M) :</strong> Équilibre entre vitesse et durabilité.</li>
-            <li><strong>Durs (H) :</strong> Longévité accrue mais moins d'adhérence.</li>
-        </ul>
-       
-        <h4>Pneus pluie</h4>
-        <ul>
-            <li><strong>Intermédiaires :</strong> Conditions humides à séchantes.</li>
-            <li><strong>Pluie extrême :</strong> Fortes pluies, conditions très humides (évite l’aquaplaning).</li>
-        </ul>
-       
-        <h3>Règlementation des pneus en F1</h3>
-        <h4>Sélection des pneus</h4>
-        <p>Avant chaque Grand Prix, Pirelli sélectionne trois types de slicks et deux types de pneus pluie en fonction des conditions de la piste et des impératifs de sécurité.</p>
-       
-        <h4>Nombre de trains de pneus autorisés</h4>
-        <ul>
-            <li><strong>Week-end classique :</strong> 13 trains de pneus slicks (2 durs, 3 médiums, 8 tendres) + 3 trains de pneus pluie.</li>
-            <li><strong>Week-end Sprint :</strong> 12 trains de pneus slicks (4 médiums, 6 tendres) + 2 trains de pneus pluie.</li>
-        </ul>
-    </div>
-   
-    <div class="section" id="sprint">
-        <h2>Sprint Weekend</h2>
-        <p>Introduit en 2021, le format Sprint ajoute une course plus courte avant le Grand Prix principal.</p>
-        <h3>Quand ?</h3>
-        <p>Seules quelques courses sélectionnées accueillent un Sprint Weekend. En 2024, 6 circuits sur 24 ont eu un Sprint.</p>
-        <h3>Qu'est-ce qui change ?</h3>
-        <ul>
-            <li>Le format du weekend</li>
-            <li>Le système de points</li>
-        </ul>
-        <h3>Format du Sprint</h3>
-        <p>Le programme est légèrement modifié par rapport à un Grand Prix classique, avec seulement une séance d'essais et deux sessions compétitives supplémentaires.</p>
-        <h3>Programme du Sprint (tableau)</h3>
-        <table border="1" style="width:100%; text-align:center;">
-            <tr><th>Jour</th><th>Événement</th></tr>
-            <tr><td>Jeudi</td><td>Journée médias</td></tr>
-            <tr><td>Vendredi</td><td>Essais libres 1 (FP1), Qualifications Sprint</td></tr>
-            <tr><td>Samedi</td><td>Course Sprint, Qualifications</td></tr>
-            <tr><td>Dimanche</td><td>Course</td></tr>
-        </table>
-        <h3>Qualifications Sprint</h3>
-        <p>Remplace la deuxième séance d'essais et définit la grille de départ de la course Sprint.</p>
-        <ul>
-            <li>SQ1: 12 minutes</li>
-            <li>SQ2: 10 minutes</li>
-            <li>SQ3: 8 minutes</li>
-        </ul>
-        <h3>Course Sprint</h3>
-        <p>Une course plus courte (100 km, environ 30 minutes) sans arrêt obligatoire.</p>
-        <h3>Système de Points</h3>
-        <p>Seuls les 8 premiers marquent des points, ce qui ajoute un enjeu supplémentaire.</p>
-    </div>
-
-
-    <div class="section" id="deroulement">
-        <h2>Déroulement des courses</h2>
-        <h3>Circuit</h3>
-        <p>Chaque Grand Prix se déroule sur un circuit différent à travers le monde, offrant des défis uniques (différences de tracé, variations d'altitude, conditions météorologiques spécifiques, etc.).</p>
-        <div style="width:100%; height:200px; background:#ddd;">Image du calendrier des circuits</div>
-       
-        <h3>L'importance de la course</h3>
-        <h4>Le résultat</h4>
-        <p>Le classement final détermine la répartition des points de championnat, essentiels pour la quête du titre des pilotes et des écuries.</p>
-        <div style="display:flex; justify-content:space-around;">
-            <div style="width:45%; height:200px; background:#ddd;">Image 1</div>
-            <div style="width:45%; height:200px; background:#ddd;">Image 2</div>
-        </div>
-       
-        <h4>La performance des pilotes</h4>
-        <p>La course est l'étape la plus intense du weekend, mettant en valeur les compétences des pilotes.</p>
-       
-        <h4>L'importance de la stratégie</h4>
-        <p>Une bonne collaboration entre le pilote et son équipe est essentielle pour optimiser les performances.</p>
-       
-        <h3>Format de la course</h3>
-        <h4>Grille de départ</h4>
-        <div style="display:flex;">
-            <div style="width:45%; height:200px; background:#ddd;">Image</div>
-            <p>Les pilotes s’alignent en fonction des résultats des qualifications.</p>
-        </div>
-       
-        <h4>Tour de formation</h4>
-        <div style="display:flex;">
-            <div style="width:45%; height:200px; background:#ddd;">Image</div>
-            <p>Un tour effectué avant le départ pour préparer les voitures.</p>
-        </div>
-       
-        <h3>Durée et distance</h3>
-        <p>Durée moyenne : 90 minutes, sans dépasser 2 heures. Distance moyenne : 305 km.</p>
-       
-        <h3>Arrêts aux stands</h3>
-        <p>Moment critique où les équipes changent les pneus et effectuent des ajustements.</p>
-        <div style="width:100%; height:200px; background:#ddd;">Image du Pit Stop</div>
-       
-        <h3>Système de points</h3>
-        <p>Seuls les 10 premiers marquent des points, avec un point bonus pour le meilleur tour s'il est dans le top 10.</p>
-        <div style="width:100%; height:200px; background:#ddd;">Image du tableau de points</div>
-       
-        <h3>Le tableau des temps</h3>
-        <div style="display:flex;">
-            <p>Informations affichées : position, écarts, pneus utilisés, abandons.</p>
-            <div style="width:45%; height:200px; background:#ddd;">Image</div>
-    </div>
-   
-    <div class="section" id="qualifications">
-        <h2>Qualifications</h2>
-    </div>
-   
-    <div class="section" id="courses">
-        <h2>Courses du weekend</h2>
-    </div>
-   
-    <div class="section" id="entrainement">
-        <h2>Entraînement libre</h2>
-    </div>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Découvrir la Formule 1</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #d32f2f;
-        }
-        p {
-            font-size: 18px;
-        }
-        .section {
-            background: white;
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            display: none;
-        }
-        .intro {
-            background: white;
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-        }
-        .teams-container {
+        .pilotes-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
             justify-content: center;
             padding: 20px;
         }
-        .team-card {
+        .pilote-card {
             background: #ffffff;
-            padding: 25px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
             text-align: left;
-            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        .team-logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 130px;
-            height: auto;
+        .pilote-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #d32f2f;
+            margin-bottom: 10px;
         }
-        .team-image {
-        width: 450px;
-        height: 250px;
-        border: 2px solid black;
-    }
-
-
-    .team-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+        .pilote-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
         nav {
             background: #d32f2f;
             padding: 10px;
@@ -698,6 +304,179 @@
         <p><strong>Champion du monde:</strong> 4</p>
        
             </div>
+
+            <div class="pilote-card">
+                <h3>Liam Lawson</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/lawson" alt="Liam Lawson"></div>
+                <p><strong>Âge :</strong> 23 ans</p>
+                <p><strong>Pays :</strong> Nouvelle-Zélande</p>
+                <p><strong>Numéro :</strong> 30</p>
+                <p><strong>Ecurie :</strong> Oracle Red Bull Racing</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Charles Leclerc</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/leclerc" alt="Charles Leclerc"></div>
+                <p><strong>Âge :</strong> 27 ans</p>
+                <p><strong>Pays :</strong> Monaco</p>
+                <p><strong>Numéro :</strong> 16</p>
+                <p><strong>Ecurie :</strong> Scuderia Ferrari HP</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Lewis Hamilton</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/hamilton" alt="Lewis Hamilton"></div>
+                <p><strong>Âge :</strong> 40 ans</p>
+                <p><strong>Pays :</strong> Royaume-Uni</p>
+                <p><strong>Numéro :</strong> 44</p>
+                <p><strong>Ecurie :</strong> Scuderia Ferrari HP</p>
+                <p><strong>Champion du monde :</strong> 7</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>George Russell</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/russell" alt="George Russell"></div>
+                <p><strong>Âge :</strong> 27 ans</p>
+                <p><strong>Pays :</strong> Royaume-Uni</p>
+                <p><strong>Numéro :</strong> 63</p>
+                <p><strong>Ecurie :</strong> Mercedes-AMG Petronas</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Kimi Antonelli</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/antonelli" alt="Kimi Antonelli"></div>
+                <p><strong>Âge :</strong> 18 ans</p>
+                <p><strong>Pays :</strong> Italie</p>
+                <p><strong>Numéro :</strong> 12</p>
+                <p><strong>Ecurie :</strong> Mercedes-AMG Petronas</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Lando Norris</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/norris" alt="Lando Norris"></div>
+                <p><strong>Âge :</strong> 25 ans</p>
+                <p><strong>Pays :</strong> Royaume-Uni</p>
+                <p><strong>Numéro :</strong> 4</p>
+                <p><strong>Ecurie :</strong> McLaren</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Oscar Piastri</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/piastri" alt="Oscar Piastri"></div>
+                <p><strong>Âge :</strong> 24 ans</p>
+                <p><strong>Pays :</strong> Australie</p>
+                <p><strong>Numéro :</strong> 81</p>
+                <p><strong>Ecurie :</strong> McLaren</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Pierre Gasly</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/gasly" alt="Pierre Gasly"></div>
+                <p><strong>Âge :</strong> 29 ans</p>
+                <p><strong>Pays :</strong> France</p>
+                <p><strong>Numéro :</strong> 10</p>
+                <p><strong>Ecurie :</strong> BWT Alpine</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Jack Doohan</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/doohan" alt="Jack Doohan"></div>
+                <p><strong>Âge :</strong> 22 ans</p>
+                <p><strong>Pays :</strong> Australie</p>
+                <p><strong>Numéro :</strong> 7</p>
+                <p><strong>Ecurie :</strong> BWT Alpine</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Carlos Sainz</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/sainz" alt="Carlos Sainz"></div>
+                <p><strong>Âge :</strong> 30 ans</p>
+                <p><strong>Pays :</strong> Espagne</p>
+                <p><strong>Numéro :</strong> 55</p>
+                <p><strong>Ecurie :</strong> Williams Racing</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Alexander Albon</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/albon" alt="Alexander Albon"></div>
+                <p><strong>Âge :</strong> 29 ans</p>
+                <p><strong>Pays :</strong> Thaïlande</p>
+                <p><strong>Numéro :</strong> 23</p>
+                <p><strong>Ecurie :</strong> Williams Racing</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Yuki Tsunoda</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/tsunoda" alt="Yuki Tsunoda"></div>
+                <p><strong>Âge :</strong> 25 ans</p>
+                <p><strong>Pays :</strong> Japon</p>
+                <p><strong>Numéro :</strong> 22</p>
+                <p><strong>Ecurie :</strong> Visa Cash App RB</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Isack Hadjar</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/hadjar" alt="Isack Hadjar"></div>
+                <p><strong>Âge :</strong> 20 ans</p>
+                <p><strong>Pays :</strong> France</p>
+                <p><strong>Numéro :</strong> 6</p>
+                <p><strong>Ecurie :</strong> Visa Cash App RB</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Fernando Alonso</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/alonso" alt="Fernando Alonso"></div>
+                <p><strong>Âge :</strong> 43 ans</p>
+                <p><strong>Pays :</strong> Espagne</p>
+                <p><strong>Numéro :</strong> 14</p>
+                <p><strong>Ecurie :</strong> Aston Martin ARAMCO</p>
+                <p><strong>Champion du monde :</strong> 2</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Lance Stroll</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/stroll" alt="Lance Stroll"></div>
+                <p><strong>Âge :</strong> 26 ans</p>
+                <p><strong>Pays :</strong> Canada</p>
+                <p><strong>Numéro :</strong> 18</p>
+                <p><strong>Ecurie :</strong> Aston Martin ARAMCO</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Esteban Ocon</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/ocon" alt="Esteban Ocon"></div>
+                <p><strong>Âge :</strong> 28 ans</p>
+                <p><strong>Pays :</strong> France</p>
+                <p><strong>Numéro :</strong> 31</p>
+                <p><strong>Ecurie :</strong> Moneygram HAAS</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Ollie Bearman</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/bearman" alt="Ollie Bearman"></div>
+                <p><strong>Âge :</strong> 19 ans</p>
+                <p><strong>Pays :</strong> Royaume-Uni</p>
+                <p><strong>Numéro :</strong> 87</p>
+                <p><strong>Ecurie :</strong> Moneygram HAAS</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Nico Hulkenberg</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/hulkenberg" alt="Nico Hulkenberg"></div>
+                <p><strong>Âge :</strong> 37 ans</p>
+                <p><strong>Pays :</strong> Allemagne</p>
+                <p><strong>Numéro :</strong> 27</p>
+                <p><strong>Ecurie :</strong> Stake Kick Sauber</p>
+            </div>
+
+            <div class="pilote-card">
+                <h3>Gabriel Bortoleto</h3>
+                <div class="pilote-image"><img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/drivers/2025Drivers/bortoleto" alt="Gabriel Bortoleto"></div>
+                <p><strong>Âge :</strong> 20 ans</p>
+                <p><strong>Pays :</strong> Brésil</p>
+                <p><strong>Numéro :</strong> 5</p>
+                <p><strong>Ecurie :</strong> Stake Kick Sauber</p>
+            </div>
         </div>
     </div>
 
@@ -829,18 +608,70 @@
         <div style="display:flex;">
             <p>Informations affichées : position, écarts, pneus utilisés, abandons.</p>
             <div style="width:45%; height:200px; background:#ddd;">Image</div>
+        </div>
     </div>
-   
+
     <div class="section" id="qualifications">
         <h2>Qualifications</h2>
+        <p>Les qualifications déterminent l'ordre de départ de la course du dimanche. Elles se déroulent le samedi, juste après la dernière séance d'essais libres, et se divisent en trois phases à élimination directe : Q1, Q2 et Q3.</p>
+
+        <h3>Format en trois phases</h3>
+        <table border="1" style="width:100%; text-align:center;">
+            <tr><th>Phase</th><th>Durée</th><th>Éliminés</th></tr>
+            <tr><td>Q1</td><td>18 minutes</td><td>Les 5 derniers (P16 à P20)</td></tr>
+            <tr><td>Q2</td><td>15 minutes</td><td>Les 5 suivants (P11 à P15)</td></tr>
+            <tr><td>Q3</td><td>12 minutes</td><td>Aucun : les 10 pilotes restants se disputent la pole</td></tr>
+        </table>
+
+        <h3>La pole position</h3>
+        <p>Le pilote qui réalise le meilleur temps au tour lors de la Q3 s'élance en première position sur la grille de départ, un avantage stratégique important pour la course.</p>
+
+        <h3>Pneus et qualifications</h3>
+        <p>Les pilotes ayant atteint la Q3 doivent s'élancer en course avec le train de pneus utilisé pour établir leur meilleur temps lors de cette phase, sauf conditions météo particulières. Ceux éliminés en Q1 ou Q2 choisissent librement leurs pneus de départ.</p>
+
+        <h3>Grille de départ</h3>
+        <p>Le résultat des qualifications fixe l'ordre des 20 voitures sur la grille. Des pénalités (moteur, comportement en piste) peuvent toutefois modifier ce classement avant le départ de la course.</p>
     </div>
-   
+
     <div class="section" id="courses">
         <h2>Courses du weekend</h2>
+        <p>Un week-end de Grand Prix classique s'étend sur trois jours, du vendredi au dimanche, et enchaîne plusieurs sessions avant la course elle-même.</p>
+
+        <h3>Programme d'un Grand Prix classique</h3>
+        <table border="1" style="width:100%; text-align:center;">
+            <tr><th>Jour</th><th>Événement</th></tr>
+            <tr><td>Vendredi</td><td>Essais Libres 1 (FP1), Essais Libres 2 (FP2)</td></tr>
+            <tr><td>Samedi</td><td>Essais Libres 3 (FP3), Qualifications</td></tr>
+            <tr><td>Dimanche</td><td>Course</td></tr>
+        </table>
+
+        <h3>Le paddock et les médias</h3>
+        <p>Le jeudi précédant la course est traditionnellement consacré aux conférences de presse et aux interviews des pilotes, avant l'ouverture du circuit aux essais le vendredi.</p>
+
+        <h3>Un enchaînement d'enjeux</h3>
+        <p>Chaque session compte : les essais libres servent à régler la voiture, les qualifications fixent la grille de départ, et la course détermine la répartition des points. Un week-end réussi demande de la constance sur l'ensemble de ces étapes.</p>
     </div>
-   
+
     <div class="section" id="entrainement">
         <h2>Entraînement libre</h2>
+        <p>Les essais libres sont les séances qui ouvrent le week-end de course. Elles permettent aux équipes et aux pilotes de préparer la voiture avant les qualifications et la course.</p>
+
+        <h3>FP1 et FP2 (vendredi)</h3>
+        <p>Deux séances d'une heure chacune. Les équipes testent différents réglages aérodynamiques et mécaniques, évaluent les pneus disponibles et récoltent des données sur le comportement de la voiture selon les conditions de piste.</p>
+
+        <h3>FP3 (samedi)</h3>
+        <p>Une dernière séance d'une heure, le matin des qualifications, pour affiner les derniers réglages avant la course à la pole position.</p>
+
+        <h3>À quoi servent ces séances ?</h3>
+        <ul>
+            <li><strong>Réglages :</strong> ajustement de l'aileron, de la suspension et de l'équilibre général de la voiture.</li>
+            <li><strong>Pneus :</strong> comparaison des différents composés Pirelli pour préparer la stratégie de course.</li>
+            <li><strong>Simulation de course :</strong> longs relais pour évaluer la dégradation des pneus et la gestion du carburant.</li>
+            <li><strong>Simulation de qualification :</strong> tours rapides pour préparer la Q1, Q2 et Q3.</li>
+        </ul>
+
+        <h3>Pilotes essais et jeunes pilotes</h3>
+        <p>Le règlement impose à chaque équipe de faire rouler un pilote débutant (moins de deux Grands Prix disputés) lors de deux séances d'essais libres par saison, une occasion pour les jeunes talents de prendre le volant d'une F1.</p>
     </div>
 </body>
 </html>
